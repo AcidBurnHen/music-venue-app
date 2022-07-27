@@ -6,7 +6,7 @@ import { ToastOptions } from "../types";
 import { showToast } from "./toastSlice";
 
 // presumably this would send the toast to some analytics engine
-const logErrorToast = (title: string) => {
+export const logErrorToast = (title: string): void => {
   // eslint-disable-next-line no-console
   console.error("Got error toast!", title);
 };
